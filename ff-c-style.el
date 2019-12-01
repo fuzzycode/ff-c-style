@@ -1,3 +1,18 @@
+;;; ff-c-style.el --- My personal c style
+
+;; Copyright (C) 2010-2019 Björn Larsson
+
+;; Author: Björn Larsson <develop@bjornlarsson.net>
+;; Maintainer: Björn Larsson <develop@bjornlarsson.net>
+;; Created: 2019-12-01
+;; Keywords: styles
+;; Homepage:
+
+;; This file is not part of GNU Emacs.
+
+;;; Commentary:
+
+;;; code:
 
 ;;;###autoload
 (defconst ff-c-style
@@ -64,19 +79,20 @@
                      empty-defun-braces))
 
     )
-  "FF C Style Guide"
-  )
+  "FF C Style Guide.")
 
 ;;;###autoload
 (defun ff-add-c-style ()
-  "Adds ff-c-style"
+  "Add ff-c-style."
   (interactive)
   (c-add-style "FF" ff-c-style nil))
 
 ;;;###autoload
 (defun ff-set-c-style ()
-  "Adds and Sets the current style to ff-c-style"
+  "Add and set the current style to ff-c-style."
   (interactive)
   (c-add-style "FF" ff-c-style t))
 
 (provide 'ff-c-style)
+
+;;; ff-c-style.el ends here
