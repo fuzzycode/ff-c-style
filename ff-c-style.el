@@ -18,12 +18,14 @@
 (defconst ff-c-style
   '((fill-column . 120)
     (whitespace-line-column . 120)
+    (c-comment-only-line-offset . 0)
     (indent-tabs-mode . t)
     (tab-width . 4)
     (c-basic-offset . 4)
     (tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
 
     (c-offsets-alist
+     (access-label . -)
      (arglist-cont . 0)
      (arglist-intro . +)
      (block-close . 0)
@@ -68,7 +70,7 @@
      (extern-lang-open . 0)
      (friend . 0)
      (func-decl-cont . +)
-     (inclass +cc-c++-lineup-inclass +)
+     (inclass . +)
      (incomposition . +)
      (inexpr-class . +)
      (inexpr-statement . +)
